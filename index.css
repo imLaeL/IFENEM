@@ -1,0 +1,304 @@
+
+/* Quando fizerem alguma modificação, ou acrescentar algo tentem sempre informar nos comentários
+---Assim fica mais fácil para saber o que houve no código*/
+
+
+
+/* css do header */
+
+.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-header {
+    width: 300px;
+}
+
+/* ---Fonte Open Sans--- */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fontes/OpenSans-font/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('fontes/OpenSans-font/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------*/
+
+/* scrollbar css */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*-----------------*/
+
+
+/* css da setinha */
+
+#seta {
+    padding: 10px;
+    position: fixed;
+    color: white;
+    left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #48e64a;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 20px;
+}
+
+
+/* css do corpo da página */
+
+    /* background */
+.body {  
+	background-image: url(img/background.png);
+	width: 99%;
+	height: 1000%;
+	background-repeat: repeat;
+	background-position: top;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+    /* modificações globais do corpo da página (pode ser alterado) */
+
+.corpo-da-pagina {
+    padding: 20px;
+}
+
+    /* Introdução da página*/
+
+#Bem-vindo {
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100px;
+    color: rgb(0, 99, 0);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 2px 2px rgb(114, 114, 114);
+}
+
+#introdução {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(0, 99, 0);
+    text-shadow: 0px 1px 2px rgb(114, 114, 114);
+}
+
+#introdução2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(0, 99, 0);
+    text-shadow: 0px 1px 2px rgb(114, 114, 114);
+}
+
+#introdução3 {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(0, 99, 0);
+    text-shadow: 0px 1px 2px rgb(114, 114, 114);
+}
+
+
+    /* css das matérias*/
+
+
+#materia {
+    margin-top: 80px;
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0px 2px 5px;
+    color: rgb(0, 99, 0);
+}
+
+
+
+#portugues-texto {
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* css do footer */
+
+footer {
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 10px;
+	background-color: rgb(0, 104, 0);
+    width: 100%;
+	color: white;
+
+}
+
+#texto-footer {
+    font-size: 15px;
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+	text-align: center;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+
+/* css do Sidebar */
+
+
+  
+  .navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(0, 119, 0);
+    padding: 0px;
+    color: #48e64a;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    left: 0;
+    top: 10px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 2px 10px rgb(37, 37, 37);
+  }
+  
+  .navbar:hover {
+    padding-right: 115px;
+    
+  }
+  
+  .navbar a {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .navbar a span {
+    position: fixed;
+    width: 100px;
+    left: -100px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navbar:hover a span {
+    opacity: 1;
+    left: 0px;
+    margin-left: 30px;
+  }
+  
+ 
+  .navbar a span:hover {
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  .active {
+    color: white;
+  }
+  
+  .navbar:hover .navbar-item {
+    margin-top: 5px;
+    padding-right: 30px;
+  }
+
+.seta {
+    position: fixed;
+    top: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    background-color: #17a819;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: seta-aparece 0.2s linear;
+}
+
+.navbar:hover .seta{
+    animation: seta-desaparece 0.5s linear;
+    display: none;
+}
+
+/* animações da seta */
+
+@keyframes seta-desaparece {
+    0% {
+        left: 0;
+        opacity: 100%;
+    }
+
+    50% {
+        left: -10px;
+        opacity: 50%;
+    }
+
+    100% {
+        left: -100px;
+        opacity: 0%;
+    }
+}
+
+@keyframes seta-aparece {
+    0% {
+        left: -100px;
+        opacity: 0%;
+    }
+
+    50% {
+        left: -10px;
+        opacity: 50%;
+    }
+
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+}
